@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南台灣五道在地美食整理</title>
+    <style>
+        :root {
+            --primary-color: #d35400;
+            --secondary-color: #f39c12;
+            --bg-color: #fcf3e8;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+        }
+
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(rgba(211, 84, 0, 0.8), rgba(211, 84, 0, 0.8)), url('https://images.unsplash.com/photo-1566465559199-20a630016de4?auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .food-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 768px) {
+            .food-card {
+                flex-direction: row;
+            }
+            .food-image {
+                flex: 1;
+                min-height: 250px;
+            }
+            .food-content {
+                flex: 1.5;
+            }
+        }
+
+        .food-image {
+            background-size: cover;
+            background-position: center;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            padding: 20px;
+        }
+
+        .food-content {
+            padding: 25px;
+        }
+
+        .city-tag {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin: 0 0 15px 0;
+            color: var(--primary-color);
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .description {
+            font-size: 0.95rem;
+            color: #555;
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>南台灣美食之魂</h1>
+        <p>整理自台南、高雄、屏東的在地必吃清單</p>
+    </header>
+
+    <article class="food-card">
+        <div class="food-image" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1596797038530-2c39da812389?auto=format&fit=crop&w=500&q=80');">
+            <span style="color:white; text-shadow: 1px 1px 5px black;">[ 模擬圖片：清燙牛肉片 ]</span>
+        </div>
+        <div class="food-content">
+            <span class="city-tag">台南</span>
+            <h2>現燙溫體牛肉湯</h2>
+            <p class="description">新鮮溫體牛切片，淋上滾燙高湯，展現肉質最純粹的粉嫩與甜味。</p>
+            <p><strong>口感：</strong> 肉質軟嫩，高湯清鮮甜美，是台南最具代表性的早餐。</p>
+            <a href="https://www.google.com/search?q=台南牛肉湯&tbm=isch" target="_blank" class="btn">查看實物圖片</a>
+        </div>
+    </article>
+
+    <article class="food-card">
+        <div class="food-image" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80');">
+             <span style="color:white; text-shadow: 1px 1px 5px black;">[ 模擬圖片：金黃炸吐司 ]</span>
+        </div>
+        <div class="food-content">
+            <span class="city-tag">台南</span>
+            <h2>府城棺材板</h2>
+            <p class="description">酥炸厚片吐司挖空，內填奶油濃湯雞肉內餡，外酥內滑的多層次口感。</p>
+            <p><strong>口感：</strong> 外殼喀滋作響，內餡爆漿滑順，奶油香氣四溢。</p>
+            <a href="https://www.google.com/search?q=台南棺材板&tbm=isch" target="_blank" class="btn">查看實物圖片</a>
+        </div>
+    </article>
+
+    <article class="food-card">
+        <div class="food-image" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1512058560366-c80b4557f900?auto=format&fit=crop&w=500&q=80');">
+             <span style="color:white; text-shadow: 1px 1px 5px black;">[ 模擬圖片：鴨肉油飯 ]</span>
+        </div>
+        <div class="food-content">
+            <span class="city-tag">高雄</span>
+            <h2>鹽埕煙燻鴨肉飯</h2>
+            <p class="description">淋上亮晶晶鴨油與油蔥酥的白飯，鋪上香燻鴨肉切片，樸實卻銷魂。</p>
+            <p><strong>口感：</strong> 每一粒米都包覆鴨油香氣，肉質Q彈帶煙燻層次。</p>
+            <a href="https://www.google.com/search?q=高雄鴨肉飯&tbm=isch" target="_blank" class="btn">查看實物圖片</a>
+        </div>
+    </article>
+
+    <article class="food-card">
+        <div class="food-image" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=500&q=80');">
+             <span style="color:white; text-shadow: 1px 1px 5px black;">[ 模擬圖片：Q彈豬腳切片 ]</span>
+        </div>
+        <div class="food-content">
+            <span class="city-tag">屏東</span>
+            <h2>萬巒豬腳</h2>
+            <p class="description">獨門滷製技術使豬腳皮Q而不油，搭配靈魂蒜蓉醬油膏，是家庭聚餐聖品。</p>
+            <p><strong>口感：</strong> 皮彈肉厚，沾醬後的蒜味與鹹甜交織，極度解膩。</p>
+            <a href="https://www.google.com/search?q=萬巒豬腳&tbm=isch" target="_blank" class="btn">查看實物圖片</a>
+        </div>
+    </article>
+
+    <article class="food-card">
+        <div class="food-image" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=500&q=80');">
+             <span style="color:white; text-shadow: 1px 1px 5px black;">[ 模擬圖片：黑糖綠豆甜品 ]</span>
+        </div>
+        <div class="food-content">
+            <span class="city-tag">屏東</span>
+            <h2>車城綠豆蒜</h2>
+            <p class="description">去殼綠豆熬成金黃甜湯，口感像蒜末般綿密，可熱食亦可搭配碎冰消暑。</p>
+            <p><strong>口感：</strong> 濃郁桂圓焦香味，豆泥與Q彈粉條帶來多重驚喜。</p>
+            <a href="https://www.google.com/search?q=車城綠豆蒜&tbm=isch" target="_blank" class="btn">查看實物圖片</a>
+        </div>
+    </article>
+
+    <footer>
+        <p>© 2024 南台灣食旅小筆記 - 讓美食溫暖你的胃</p>
+    </footer>
+</div>
+
+</body>
+</html>
